@@ -1,0 +1,15 @@
+# Bytecode
+__pycache__/
+*.pyc
+
+# Virtual environment (if it exists locally)
+.venv/
+
+# Secrets
+.env
+
+# Logs
+discord.log
+
+# Tests
+tests/

@@ -1,0 +1,37 @@
+# Bytecode and compiled files
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+
+# Virtual environment
+.venv/
+
+# Environment variables and secrets
+.env
+
+# Logs
+discord.log
+
+# Test output
+tests/__pycache__/
+*.pytest_cache/
+coverage.*
+
+# Editor and OS files
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Docker files you want ignored in Git
+*.tar
+*.log
+
+# VS Code (optional)
+.vscode/
+
+# Pipenv or Poetry (if unused)
+Pipfile
+Pipfile.lock
+poetry.lock
