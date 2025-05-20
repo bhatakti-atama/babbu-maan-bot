@@ -31,13 +31,4 @@ async def on_message(message):
 
     await bot.process_commands(message)
 
-@bot.event
-async def on_message(message):
-    if message.author.bot:
-        return
-    if random.randint(1,10) != 1: #respond to only 10% of the messages.
-        return
-    response = await generate_response(message.content)
-    await message.reply(response)
-
 bot.run(DISCORD_TOKEN)
