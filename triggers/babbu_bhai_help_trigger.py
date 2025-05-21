@@ -8,7 +8,7 @@ class BabbuBhaiHelpTrigger(Trigger):
 
     async def handle(self, message, bot):
         embed = Embed(
-            title="👊 Babbu Bhai Commands Menu 👊",
+            title="👊 Babbu Bhai Ki Kalain 👊",
             description="Here’s what your Astaad can do:",
             color= Color.orange()
         )
