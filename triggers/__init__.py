@@ -5,11 +5,11 @@ from triggers.hoes_mad_trigger import HoesMadTrigger
 from triggers.jarvis_toto_trigger import JarvisTotoTrigger
 from triggers.random_response_trigger import RandomResponseTrigger
 triggers = [
-    RandomResponseTrigger(),
     LunnTeVajjTrigger(),
     BhornaTrigger(),
     R34CatTrigger(),
     HoesMadTrigger(),
-    JarvisTotoTrigger()
+    JarvisTotoTrigger(),
+    RandomResponseTrigger() #put this on bottom always, it should trigger only IF there are no other triggers.
 ]
 

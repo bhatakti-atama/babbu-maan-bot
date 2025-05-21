@@ -2,8 +2,6 @@ import discord
 from discord.ext import commands
 from config import DISCORD_TOKEN
 from triggers import triggers
-import random
-from utils.gemini import generate_response
 
 intents = discord.Intents.default()
 intents.message_content = True
