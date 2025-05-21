@@ -15,4 +15,3 @@ triggers = [
     BabbuBhaiHelpTrigger(),
     RandomResponseTrigger() #put this on bottom always, it should trigger only IF there are no other triggers.
 ]
-

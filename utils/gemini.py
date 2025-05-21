@@ -3,7 +3,6 @@ from google.genai import types
 from config import GEMINI_API,SYSTEM_PROMPT
 client = genai.Client(api_key=GEMINI_API)
 
-
 async def generate_response(user_message):
     try:
         response = client.models.generate_content(
@@ -17,6 +16,3 @@ async def generate_response(user_message):
     except Exception as e:
         print(e)
         return None
-
-
-   
