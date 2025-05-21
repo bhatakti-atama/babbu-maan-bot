@@ -28,5 +28,3 @@ class R34CatTrigger(Trigger):
             content=msg,
             file=File(image_data, filename=file_name)
     )   
-
-        
