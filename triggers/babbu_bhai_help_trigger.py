@@ -20,6 +20,4 @@ class BabbuBhaiHelpTrigger(Trigger):
         embed.add_field(name="`na bhoreya kar`", value="🗣️ If someone writes a long essay (over 200 chars), Babbu Bhai will roast them.", inline=False)
 
         # No need to open with PIL if just sending raw content
-        await message.channel.send(
-            content= embed
-    )   
+        await message.channel.send(embed=embed)
