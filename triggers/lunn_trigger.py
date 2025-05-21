@@ -15,7 +15,7 @@ class LunnTeVajjTrigger(Trigger):
         media_bytes = get_cached_media("babbu_maan_lunn_te_vajj.mp4")
         if message.mentions:
             tagged = ", ".join(user.mention for user in message.mentions)
-            msg = f"Sale {tagged} lunn te vajj" if len(message.mentions) == 1 else f"Salon {tagged} ko lunn te vajjo"
+            msg = f"Sale {tagged} lunn te vajj" if len(message.mentions) == 1 else f"Salon {tagged} lunn te vajjo"
         else:
             msg = "Sarre lunn te vajjo"
         
