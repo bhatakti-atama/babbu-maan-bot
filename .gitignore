@@ -35,3 +35,4 @@ Thumbs.db
 Pipfile
 Pipfile.lock
 poetry.lock
+update_requirements.txt
