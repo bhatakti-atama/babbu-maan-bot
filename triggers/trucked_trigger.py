@@ -9,11 +9,12 @@ class TruckedTrigger(Trigger):
         return "truck" in message.content.lower() and len(message.mentions) > 0
 
     async def handle(self, message, bot):
-        text = f"@{message.mentions[0].display_name} you been trucked by @{message.author.display_name}"
+        msg = f"{message.mentions[0].mention} you have been trucked by {message.author.mention}"
+        image_text = f"{message.mentions[0].display_name} you been trucked by {message.author.display_name}"
         gif_bytes = get_cached_media("anime_truck.gif")
-        edited_gif = AddTextToImage(gif_bytes, text, position="top")
+        edited_gif = AddTextToImage(gif_bytes, image_text   , position="top")
         
         await message.channel.send(
-            content= text,
+            content= msg,
             file= File(edited_gif, filename="edited_image.gif")
         )
