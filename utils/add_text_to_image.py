@@ -4,7 +4,7 @@ import io
 def AddTextToImage(image_bytes, text, position="bottom", font_size=20):
     img = Image.open(io.BytesIO(image_bytes))
     frames = []
-    font = ImageFont.truetype("fonts/impact.ttf")
+    font = ImageFont.truetype("fonts/impact.ttf", font_size)
 
     is_animated = getattr(img, "is_animated", False)
 
@@ -20,7 +20,7 @@ def AddTextToImage(image_bytes, text, position="bottom", font_size=20):
         x = (frame.width - text_width) // 2
         y = 10 if position == "top" else frame.height - text_height - 10
 
-        draw.text((x, y), text, font=font, fill=(255, 255, 255, 255))
+        draw.text((x, y), text, font=font, fill=(0, 0, 0, 255))
         return Image.alpha_composite(frame, txt_layer)
 
     if is_animated:
