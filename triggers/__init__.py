@@ -5,6 +5,7 @@ from triggers.hoes_mad_trigger import HoesMadTrigger
 from triggers.jarvis_toto_trigger import JarvisTotoTrigger
 from triggers.babbu_bhai_help_trigger import BabbuBhaiHelpTrigger
 from triggers.random_response_trigger import RandomResponseTrigger
+from triggers.trucked_trigger import TruckedTrigger
 
 triggers = [
     LunnTeVajjTrigger(),
@@ -13,5 +14,6 @@ triggers = [
     HoesMadTrigger(),
     JarvisTotoTrigger(),
     BabbuBhaiHelpTrigger(),
+    TruckedTrigger(),
     RandomResponseTrigger() #put this on bottom always, it should trigger only IF there are no other triggers.
 ]
