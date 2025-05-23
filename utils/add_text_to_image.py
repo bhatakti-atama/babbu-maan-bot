@@ -13,7 +13,10 @@ def AddTextToImage(image_bytes, text, position="bottom", font_size=20):
         txt_layer = Image.new("RGBA", frame.size, (255, 255, 255, 0))
         draw = ImageDraw.Draw(txt_layer)
 
-        text_width, text_height = draw.textlength(text, font=font)
+        bbox = draw.textbbox((0, 0), text, font=font)
+        text_width = bbox[2] - bbox[0]
+        text_height = bbox[3] - bbox[1]
+
         x = (frame.width - text_width) // 2
         y = 10 if position == "top" else frame.height - text_height - 10
 
